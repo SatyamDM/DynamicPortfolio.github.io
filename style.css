@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP',sans-serif;
+}
+.logo img{
+width: 200px;
+
+
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 3rem;
+  height: 4.5rem;
+  color:black;
+  font-weight: bolder;
+}
+
+
+.container-fluid{
+  background-image: url(spectrum.png);
+  height:100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.navbar{
+  padding:0.8rem;
+  
+
+}
+.navbar-nav li{
+  padding-right: 20px;
+  
+
+}
+.nav-link{
+  font-size:1.1em  !important;
+  
+}
+.padding{
+  padding-bottom:2rem;
+}
+.aboutus h2{
+ text-decoration: none;
+ font-size:4rem;
+ font-weight:bold;
+
+}
+.aboutus hr{
+  background-color: black;
+  height:2px;
+}
+.wingbox{
+  border-top:5px solid #f2dc5d;
+  border-bottom:5px solid#f2dc5d;
+  padding:20px;
+  background-color: #f2dc5d;
+}
+.wings h2{
+  text-decoration: none;
+  font-size:4rem;
+  font-weight:bold;
+ 
+ }
+ .wings hr{
+  background-color: black;
+  height:2px;
+  width:65%;
+  margin:0 auto;
+}
+.wings p{
+  text-align:center;
+}
+.carousel-inner img{
+  width:100%;
+  height:100%;
+}
+
+.carousel-caption h1{
+  font-size:700%;
+  text-transform:uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+.carousel-caption h3{
+  font-size:300%;
+  font-weight:500;
+  text-shadow:1px 1px 10px #000;
+  padding-bottom:1rem;
+}
+.projectbox{
+  border-top:5px solid #f2a359;
+  border-bottom:5px solid#f2a359;
+  padding:20px;
+  background-color: #f2a359;
+}
+.projects h2{
+  text-decoration: none;
+  font-size:4rem;
+  font-weight:bold;
+ 
+ }
+
+.projects hr{
+  background-color: black;
+  height:2px;
+  width:65%;
+  margin:0 auto;
+}
+.card:hover{
+  background-color: lightgray;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.7);
+  transition: box-shadow 500ms,background 3s ;
+   transition-delay: 500ms;
+}
+.card a:hover{
+  background-color: lightgray;
+ color:black;
+  transition: box-shadow 500ms,background 3s ;
+   transition-delay: 500ms;
+}
+
+.connectbox{
+  border-top:5px solid #DB9065;
+  border-bottom:5px solid#db9065;
+  padding:20px;
+  background-color: #DB9065;
+  
+
+}
+.connect h2{
+  text-decoration: none;
+  font-size:4rem;
+  font-weight:bold;
+ 
+ }
+.connect hr{
+  background-color: black;
+  height:2px;
+  width:65%;
+  margin:0 auto;
+}
+.social a{
+  font-size:4.5rem;
+  padding:3rem;
+}
+.fa-facebook{
+  color:#3b5998;
+}
+
+.fa-linkedin{
+  color:#0077b5;
+}
+.fa-instagram{
+  color:#8a3ab9;
+}
+.fa-github{
+  color:#000;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-instagram:hover,
+.fa-github:hover{
+  color:#d5d5d5;
+}
+footer{
+  background-color:#240b36;
+  color:#d5d5d5;
+  padding-top:2rem;
+}
+footer a{
+  color:#d5d5d5;
+  text-decoration: none;
+}
+footer a:hover{
+  color:blanchedalmond;
+  text-decoration: none;
+}
+hr.light{
+  border-top:1px solid #d5d5d5;
+  width:100%;
+  margin-top:0.8rem;
+  margin-bottom:1rem;
+}
+hr.light-100{
+  border-top:1px solid #d5d5d5;
+  width:100%;
+  margin-top:0.8rem;
+  margin-bottom:1rem;
+}
+
+.reveal{
+  position:relative;
+  transform:translateY(150px);
+  opacity:0;
+  transition: all 1s ease;
+}
+.reveal.active{
+  transform:translateY(0px);
+  opacity:1
+}
+/*---Media Queries---*/
+@media(max-width:992px){
+  .social a{
+          font-size:4rem;
+          padding:2rem;
+  }
+
+  
+}
+@media(max-width:768px){
+  .carousel-caption{
+  
+  top:45%;
+ 
+}
+.carousel-caption h1{
+  font-size:350%;
+}
+.carousel-caption h3{
+  font-size:140%;
+  
+}
+.display-4{
+  font-size:200%;
+}
+.social a{
+  font-size:2rem;
+  padding:1.2rem;
+}
+}
+@media(max-width:576px){
+  .carousel-caption{
+  
+      top:40%;
+     
+  }
+  .carousel-caption h1{
+      font-size:250%;
+  }
+  .carousel-caption h3{
+      font-size:110%;
+      
+  }
+  .carousel-indicators{
+      display:none;
+  }
+  .display-4{
+      font-size:160%;
+  }
+  .social a{
+      font-size:1.5rem;
+      padding:1.0rem;
+  }
+}
